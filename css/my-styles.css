@@ -1,0 +1,55 @@
+body {
+  text-align: center;
+}
+
+h1 {
+	color: #ffffff;
+}
+
+h2 {
+	color: #ffffff;
+	/*display: none;*/
+}
+
+
+.youWin{
+	height: 150px;
+}
+
+.youWinSucccessMessageOff {
+  display:none;
+}
+
+.youWinSuccessMessageOn {
+  display:block;
+}
+
+.guessTheNumber{
+	height: 50px;
+}
+
+.form{
+	height: 130px;
+}
+
+.giveHint{
+	height: 50px;
+}
+
+.newGame{
+	height: 50px;
+}
+
+.guessesRemaining{
+	height: 50px;
+}
+
+.previousGuesses{
+	height: 90px;
+	display: none;
+}
+
+
+.guessLogRow {
+	height: 30px;
+}

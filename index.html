@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Guess the Number</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
+    <link href="css/my-styles.css" rel="stylesheet" media="screen">
+  </head>
+
+    <body id="index" background="images/desert-sky-v2.jpg">
+
+      <div class="container">
+
+
+        <div class = "youWin">
+          <div class="col-sm-4 col-sm-offset-4">
+              <h2 class="youWinSucccessMessageOff">You win!</h2>
+          </div>
+        </div>
+
+
+        <div class = "guessTheNumber">
+          <div class="col-sm-4 col-sm-offset-4">
+              <h1>Guess the number</h1>
+          </div>
+        </div>
+
+
+        <div class = "form">
+          <div class="col-sm-4 col-sm-offset-4">
+            <form action="#" method="post">
+              <!--input number-->            
+                <div class="form-group">
+                  <input id="myNewGuess" class="form-control" type="number" placeholder="Type in a number from 1-100">
+                </div>
+              <!--submit your guess-->  
+                  <button id="submit" class="btn btn-success btn-lg" type="button" >Submit your guess!</button>
+
+
+<!-- The input button is submitting the form, hence reloading the page. You need to overcome the default behaviour of the button by using e.preventDefault() or by changing the type "submit" of the button.
+
+working example by just changing input type='button' -->
+
+              </div>
+            </form>
+          </div>
+
+
+        <div class = "guessesRemaining">
+          <div class="col-sm-4 col-sm-offset-4">
+            <p class="numberGuessesRemaining">5 guesses per game</p>
+          </div>
+        </div>
+
+        <!-- Display each guess as it's made -->
+
+
+            <div class = "guessLogRow">
+              <div class="col-sm-10 col-sm-offset-1">
+                <div id = "guessLog1"></div>
+              </div>
+            </div>
+
+
+            <div class = "guessLogRow">
+              <div class="col-sm-10 col-sm-offset-1">
+                <div id = "guessLog2"></div>
+              </div>
+            </div>
+
+
+            <div class = "guessLogRow">
+              <div class="col-sm-10 col-sm-offset-1">
+                <div id = "guessLog3"></div>
+              </div>
+            </div>
+
+
+            <div class = "guessLogRow">
+              <div class="col-sm-10 col-sm-offset-1">
+                <div id = "guessLog4"></div>
+              </div>
+            </div>
+
+
+            <div class = "guessLogRow">
+              <div class="col-sm-10 col-sm-offset-1">
+                <div id = "guessLog5"></div>
+              </div>
+            </div>
+
+      <!-- End the guess log -->
+
+
+
+
+        <div id = "giveHint">
+          <div class="col-sm-4 col-sm-offset-4">
+            <a class="btn btn-default" href="#">Give me a hint</a>
+          </div>
+        </div>
+
+
+
+        <div id = "newGame">
+          <div class="col-sm-4 col-sm-offset-4">
+            <a class="btn btn-default" href="#">New game</a> 
+          </div>
+        </div>
+
+
+    </div>
+
+      
+  
+  <script src="js/jquery-1.11.3.min.js"></script>
+        <!-- <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script> -->
+  <script src="js/app.js"></script>
+  </script>
+
+  </body>
+</html>
