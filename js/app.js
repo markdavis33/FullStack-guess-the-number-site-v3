@@ -95,13 +95,13 @@ $(document).ready(function() {
 //It should display the answer instead of "[object bject]"
             var guessLogMessageLast = "Your guess of " + myNewGuess + " was " + hotWarmCold + ".  You have now used up your 5 guesses, so this game is now over. The answer was " + answer + "."; //
             $("#guessLog5").append(guessLogMessageLast); 
-//BUG $4: NEED TO MAKE THE GAME STOP AT THIS POINT:                
+//BUG #4: NEED TO MAKE THE GAME STOP AT THIS POINT:                
             return false;
         }
 
         //Create a button that provides the answer (Give me a Hint).
         $("#giveHint").click(function() {
-//BUG $5: NEED TO FIX THE "object Object" ERROR HERE TOO:
+//BUG #5: NEED TO FIX THE "object Object" ERROR HERE TOO:
             alert("The answer was " + answer + ". This game is now over...but feel free to play again by clicking the 'New Game' button.");
             return false;
         });
