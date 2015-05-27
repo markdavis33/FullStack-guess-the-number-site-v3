@@ -7,6 +7,7 @@ $(document).ready(function() {
     //At the beginning of each game, create two things
     //A random number between 1-100, which will be the answer for this game 
     var answer = Math.floor(Math.random() * 100) + 1;
+    console.log(answer);
 
     //An empty array to store the user's guesses for this game
     var myGuessesArray = [];
@@ -36,12 +37,11 @@ $(document).ready(function() {
             return false;
         };
 
-//BUG #1: this is not working...when I got the right answer 38, it said "Your guess of 38 was hot. You should guess lower."
         //3. Validate to see if the user guessed the right answer
-        if (myNewGuess === answer) {
+        if (myNewGuess == answer) {
             //Change the background color, add an image, or do something creative 	
-            $("youwin").addClass("youWinSuccessMessageOn");
-            return false;
+            $("h2").removeClass("youWinSucccessMessageOff");
+            return 
         };
 
         //If we make it through those validation checks, continue with the rest of the program 
@@ -115,8 +115,8 @@ $(document).ready(function() {
             $("#guessLog4").empty();
             $("#guessLog5").empty();
             //remove the You Win message:
-            $("youwin").removeClass("youWinSuccessMessageOn");
-            $("youwin").addClass("youWinSuccessMessageOff");
+            $(".youwin").removeClass("youWinSuccessMessageOn");
+            $(".youwin").addClass("youWinSuccessMessageOff");
             alert("The game has started over.  Enter your first guess!");
         });
 
